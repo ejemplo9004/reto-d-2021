@@ -1,17 +1,12 @@
 fileFormatVersion: 2
-guid: a21e99e57e54ff347825260dda9aaaa5
+guid: 0637dda925d546b428d58fe757290e4a
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Throw
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 360f9158f7544ef4aa17626a83b7f0f4, type: 2}
+    second: Mma Kick
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Throw
+      name: Mma Kick
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 33
+      lastFrame: 48
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
