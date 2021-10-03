@@ -68,13 +68,13 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Grosor: 0.01
-    - _IntensidadSombra: 1.29
+    - _IntensidadSombra: 1.02
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _Sombreado: 0.67
+    - _Sombreado: 0.579
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
