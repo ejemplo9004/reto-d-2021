@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Material
+  m_Name: Material 1
   m_Shader: {fileID: 4800000, guid: 57712db00e792cd47b47e318a6c8081e, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -68,13 +68,13 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 1
     - _Grosor: 0.01
-    - _IntensidadSombra: 1.29
+    - _IntensidadSombra: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _Sombreado: 0.67
+    - _Sombreado: 0.929
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
