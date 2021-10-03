@@ -11,14 +11,20 @@ public class Health : MonoBehaviour
     public Slider uiHealthPercentage;
     public UnityEvent death;
 
-    public void ReduceHealth(float dmg){
+	private void Start()
+	{
+        health = maxHealth;
+	}
+	public void ReduceHealth(float dmg){
         health = Mathf.Clamp(health - dmg, 0, maxHealth);
         if(health == 0) death.Invoke();
+        UpdateHealth();
     }
 
     public void UpdateHealth()
     {
-        if (uiHealthPercentage != null) uiHealthPercentage.value = this.GetHealthPercentage();
+        if (uiHealthPercentage != null) 
+            uiHealthPercentage.value = this.GetHealthPercentage();
     }
 
     public float GetHealthPercentage()
