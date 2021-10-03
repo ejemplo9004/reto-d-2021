@@ -12,8 +12,8 @@ public class Health : MonoBehaviour
     public UnityEvent death;
 
     public void ReduceHealth(float dmg){
-        health = Mathf.Clamp(actualHealth - dmg, 0, maxHealth);
-        if(health == 0) death.invoke();
+        health = Mathf.Clamp(health - dmg, 0, maxHealth);
+        if(health == 0) death.Invoke();
     }
 
     public void UpdateHealth()
