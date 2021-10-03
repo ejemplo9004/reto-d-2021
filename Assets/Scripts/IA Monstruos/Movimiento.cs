@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
-    public float speed = 0.09f;
+    public float speed;
     public float currentSpeed;
-    public Animator animator;
 
     public Vector3 target;
 
