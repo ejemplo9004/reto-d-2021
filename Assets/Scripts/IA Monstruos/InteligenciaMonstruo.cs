@@ -14,6 +14,7 @@ public class InteligenciaMonstruo : MonoBehaviour
     public MonsterState state;
     public LayerMask capaEdificios;
     public Health saludEnemigo;
+    public Nivel controlNivel;
     [Header("Stats")]
     public float poder;
     public float rangoVision;
@@ -23,7 +24,6 @@ public class InteligenciaMonstruo : MonoBehaviour
     void Start()
     {
         movement = this.gameObject.GetComponent<Movimiento>();
-        // Define an initial target
         ChangeTarget();
         ChangeState(MonsterState.walking);
         StartCoroutine(Estados());
@@ -39,6 +39,10 @@ public class InteligenciaMonstruo : MonoBehaviour
 				case MonsterState.idle:
 					break;
 				case MonsterState.walking:
+                    if(controlNivel.nivelTerminado){
+                        ChangeState(MonsterState.idle);
+                        break;
+                    }
                     if (actualTarget != null && Vector3.SqrMagnitude(transform.position - actualTarget.position) < rangoAtaque*rangoAtaque)
                     {
                         ChangeState(MonsterState.attacking);
@@ -54,10 +58,18 @@ public class InteligenciaMonstruo : MonoBehaviour
                     }
                     break;
 				case MonsterState.attacking:
+                    if(controlNivel.nivelTerminado){
+                        ChangeState(MonsterState.idle);
+                        break;
+                    }
                     if (saludEnemigo == null)
                     {
-                        ChangeTarget();
-                        ChangeState(MonsterState.walking);
+                        if(controlNivel.nivelTerminado)
+                            ChangeState(MonsterState.idle);
+                        else{
+                            ChangeTarget();
+                            ChangeState(MonsterState.walking);
+                        }
                     }
 					if (saludEnemigo != null)
 					{
