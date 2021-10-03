@@ -178,6 +178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Torreta2
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 906c8e9cf2955504c935fdfb36d00ef7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 906c8e9cf2955504c935fdfb36d00ef7, type: 3}
 --- !u!1001 &352017094
@@ -259,6 +263,37 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.12
   m_Center: {x: 0, y: 1.3585612, z: 0}
+--- !u!114 &500978228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500978226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4685c38f5739c4f4da27c7b49ca5ace4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  uiHealthPercentage: {fileID: 0}
+  autoDestruir: 1
+  death:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 500978226}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &912185236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -427,6 +462,8 @@ MonoBehaviour:
   capaEdificios:
     serializedVersion: 2
     m_Bits: 64
+  saludEnemigo: {fileID: 0}
+  poder: 25
   rangoVision: 3.33
   rangoAtaque: 1.5
 --- !u!114 &1238941760
@@ -553,6 +590,55 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1353640170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 906c8e9cf2955504c935fdfb36d00ef7, type: 3}
+  m_PrefabInstance: {fileID: 328659868}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1353640171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353640170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4685c38f5739c4f4da27c7b49ca5ace4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  uiHealthPercentage: {fileID: 0}
+  autoDestruir: 1
+  death:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1353640170}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!135 &1353640172
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353640170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.89957905
+  m_Center: {x: 0, y: 0.89957905, z: 0}
 --- !u!1001 &1370494361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -566,7 +652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc7a4d07a9fa8f9469795f930105db9a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.89
+      value: 2.26
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc7a4d07a9fa8f9469795f930105db9a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -574,7 +660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc7a4d07a9fa8f9469795f930105db9a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.67
+      value: -0.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc7a4d07a9fa8f9469795f930105db9a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -744,3 +830,34 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.12
   m_Center: {x: 0, y: 1.3585612, z: 0}
+--- !u!114 &2125830864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125830862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4685c38f5739c4f4da27c7b49ca5ace4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  maxHealth: 100
+  uiHealthPercentage: {fileID: 0}
+  autoDestruir: 1
+  death:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2125830862}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

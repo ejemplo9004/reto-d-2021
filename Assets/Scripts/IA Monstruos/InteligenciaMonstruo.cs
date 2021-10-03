@@ -10,6 +10,9 @@ public class InteligenciaMonstruo : MonoBehaviour
     public Movimiento movement;
     public MonsterState state;
     public LayerMask capaEdificios;
+    public Health saludEnemigo;
+    [Header("Stats")]
+    public float poder;
     public float rangoVision;
     public float rangoAtaque = 1.5f;
 
@@ -51,6 +54,10 @@ public class InteligenciaMonstruo : MonoBehaviour
                         ChangeTarget();
                         ChangeState(MonsterState.walking);
                     }
+					if (saludEnemigo != null)
+					{
+                        saludEnemigo.ReduceHealth(poder/2f);
+					}
                     break;
 				case MonsterState.dying:
 					break;
@@ -75,6 +82,10 @@ public class InteligenciaMonstruo : MonoBehaviour
 	{
         actualTarget = nT;
         movement.target = (nT != null)?  nT.position: Vector3.zero;
+		if (nT != null)
+		{
+            saludEnemigo = nT.GetComponent<Health>();
+		}
 
     }
 
