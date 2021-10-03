@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class InteligenciaMonstruo : MonoBehaviour
 {
@@ -42,14 +45,16 @@ public class InteligenciaMonstruo : MonoBehaviour
                     }
                     else
                     {
-                        if (actualTarget == null && Vector3.SqrMagnitude(transform.position) < 2.25f)
+                        Detectar();
+                        if (actualTarget == null)
                         {
-                            ChangeState(MonsterState.attacking);
+                            if(Vector3.SqrMagnitude(transform.position) < rangoAtaque*rangoAtaque) 
+                                ChangeState(MonsterState.attacking);
                         }
                     }
                     break;
 				case MonsterState.attacking:
-                    if (actualTarget == null)
+                    if (saludEnemigo == null)
                     {
                         ChangeTarget();
                         ChangeState(MonsterState.walking);
@@ -68,14 +73,23 @@ public class InteligenciaMonstruo : MonoBehaviour
 		}
 	}
 
-	private void FixedUpdate()
+	public void Detectar()
 	{
         Collider[] cols = Physics.OverlapSphere(transform.position, rangoVision, capaEdificios);
 		if (cols.Length > 0)
 		{
-            ChangeTarget(cols[0].transform);
+            float dMenor = 5000;
+            int targetMasCercano = 0;
+            for (var i = 0; i < cols.Length; i++)
+            {
+                float distancia = Vector3.SqrMagnitude(cols[i].transform.position - transform.position);
+                if(distancia < dMenor){
+                    targetMasCercano = i;
+                    dMenor = distancia;
+                }
+            }
+            ChangeTarget(cols[targetMasCercano].transform);
 		}
-		
 	}
 
 	public void ChangeTarget(Transform nT = null)
@@ -86,8 +100,8 @@ public class InteligenciaMonstruo : MonoBehaviour
 		{
             saludEnemigo = nT.GetComponent<Health>();
 		}
-
     }
+
 
     public void ChangeState(MonsterState nS)
     {
@@ -110,23 +124,26 @@ public class InteligenciaMonstruo : MonoBehaviour
 		}
 		state = nS;
         animator.SetInteger("estado", (int)nS);
-
+        
     }
 
-    private void OnTriggerEnter(Collider other) {
-        if(other.tag.Equals("Enemy")){
-            actualTarget = other.transform;
-        }
+    public void Death(){
+        ChangeState(MonsterState.dying);
+        Invoke("Morir", 15f);
+    }
+
+    private void Morir(){
+        Destroy(gameObject);
     }
 
 
-
-	private void OnDrawGizmosSelected()
-	{
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, rangoVision);
-	}
-
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected() {
+         Handles.color = Color.red;
+         Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
+         Handles.DrawWireDisc(transform.position + Vector3.up*0.2f, Vector3.up, rangoVision); 
+    }
+#endif
 
 
 
