@@ -7,30 +7,21 @@ public class Juego : MonoBehaviour
 {
     public static Juego singleton;
 
-    public int nivelAlcanzado = 0;
-    public int nivelActual;
-    public string[] niveles;
-
-
     void Start()
     {
         singleton = this;
+        PlayerPrefs.SetInt("nivel", 1);
     }
 
 
-    public void SubirDeNivel(){
-        nivelAlcanzado++;
-    }
-
-
-    public void SeleccionarNivel(int nivel){
-        if(nivel <= nivelAlcanzado){
-            nivelActual = nivel;
-            SceneManager.LoadScene(niveles[nivel]);
+    public void CompararNivel(int nivel){
+        if(PlayerPrefs.GetInt("nivel", 1) < nivel){
+            PlayerPrefs.SetInt("nivel", nivel);
         }
     }
 
-    public void RepetirNivel(){
-        SceneManager.LoadScene(niveles[nivelActual]);
-    }
+    
+
+
+    
 }

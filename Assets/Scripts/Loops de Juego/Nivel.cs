@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Nivel : MonoBehaviour
 {
     public bool nivelTerminado;
+    public int numNivel;
     public Transform torreEnemiga;
     public Transform torreAliada;
 
@@ -12,9 +14,8 @@ public class Nivel : MonoBehaviour
     void Start()
     {
         StartCoroutine(TerminarNivel());
+        
     }
-
-    
 
     public IEnumerator TerminarNivel()
     {
@@ -22,15 +23,22 @@ public class Nivel : MonoBehaviour
         {
             if (torreEnemiga == null && !nivelTerminado){
                 nivelTerminado = true;
-                Juego.singleton.SubirDeNivel();
+                Juego.singleton.CompararNivel(numNivel);
+                Time.timeScale = 0;
+                Debug.Log(PlayerPrefs.GetInt("nivel", 1));
             }
             else if(torreAliada == null && !nivelTerminado){
+                Time.timeScale = 0;
                 nivelTerminado = true;
             }
             
             yield return new WaitForSeconds(0.5f);
         }
     }
+
+    
+
+    
 
 
 }
