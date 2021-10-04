@@ -377,10 +377,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Valor","value":{"$content":2,"$type":"System.Int32"},"$version":"A"},{"name":"ObjetoACrear","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"Botonera","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Valor","value":{"$content":2,"$type":"System.Int32"},"$version":"A"},{"name":"ObjetoACrear","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 5527015511799858989, guid: 781a4bb2170f2dd4db9a71a51275eede, type: 3}
-    - {fileID: 736237289}
 --- !u!4 &327194646 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f12c1796785d434daf2bc4356c20d67, type: 3}
@@ -642,6 +641,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
       value: 
       objectReference: {fileID: 736237289}
@@ -881,6 +888,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
       propertyPath: _data._objectReferences.Array.data[0]
       value: 
       objectReference: {fileID: 736237289}
@@ -1031,9 +1046,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"Objeto","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"Recursos","value":{"$content":200,"$type":"System.Int32"},"$version":"A"},{"name":"Tiempo","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"Objeto","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"Recursos","value":{"$content":200,"$type":"System.Int32"},"$version":"A"},{"name":"Tiempo","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"Botonera","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 3973234683702119486, guid: afe95c436dccd5544849a862d4afd3ff, type: 3}
+    - {fileID: 736237289}
 --- !u!4 &1056664404
 Transform:
   m_ObjectHideFlags: 0
@@ -1199,6 +1215,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589750181828533773, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._objectReferences.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
@@ -2210,6 +2234,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4589750181828533773, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
+      propertyPath: _data._objectReferences.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9033378521885194196, guid: 3c35b659db2ae6f4588e9dd7cbe75226, type: 3}
