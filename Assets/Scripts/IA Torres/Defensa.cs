@@ -13,24 +13,24 @@ public class Defensa : MonoBehaviour
     private float timer = 0f;
     void FixedUpdate()
     {
-        AtacarMonstruos(attackRadio, enemyTag);
+        AtacarMonstruos();
     }
-	void AtacarMonstruos(float radio, string tag){
-        Collider[] hitMonstruos = Physics.OverlapSphere(transform.position, radio);
+	void AtacarMonstruos(){
+        Collider[] hitMonstruos = Physics.OverlapSphere(transform.position, attackRadio);
         if(hitMonstruos.Length > 0)
         {
             foreach (var monstruo in hitMonstruos)
             {
-                if(monstruo.gameObject.CompareTag(tag)){
+                if(monstruo.gameObject.CompareTag(enemyTag)){
 
-                    timer += Time.deltaTime;
+                    timer += Time.fixedDeltaTime;
 
                     if(timer >= dps){
                         attackMode.Invoke();
                         monstruo.GetComponent<Health>().ReduceHealth(10f);
                         timer = 0f;
                     }
-                    
+
                 }
             }
         }
