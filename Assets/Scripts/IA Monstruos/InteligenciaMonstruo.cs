@@ -8,13 +8,12 @@ using UnityEditor;
 public class InteligenciaMonstruo : MonoBehaviour
 {
     public Transform actualTarget;
-    
+
     public Animator animator;
     public Movimiento movement;
     public MonsterState state;
     public LayerMask capaEdificios;
     public Health saludEnemigo;
-    public Nivel controlNivel;
     [Header("Stats")]
     public float poder;
     public float rangoVision;
@@ -31,129 +30,121 @@ public class InteligenciaMonstruo : MonoBehaviour
 
 
     public IEnumerator Estados()
-	{
-		while (true)
-		{
-			switch (state)
-			{
-				case MonsterState.idle:
-					break;
-				case MonsterState.walking:
-                    if(controlNivel.nivelTerminado){
-                        ChangeState(MonsterState.idle);
-                        break;
-                    }
-                    if (actualTarget != null && Vector3.SqrMagnitude(transform.position - actualTarget.position) < rangoAtaque*rangoAtaque)
+    {
+        while (true)
+        {
+            switch (state)
+            {
+                case MonsterState.idle:
+                    break;
+                case MonsterState.walking:
+                    if (actualTarget != null && Vector3.SqrMagnitude(transform.position - actualTarget.position) < rangoAtaque * rangoAtaque)
                     {
                         ChangeState(MonsterState.attacking);
                     }
                     else
                     {
-                        Detectar();
+                        
                         if (actualTarget == null)
                         {
-                            if(Vector3.SqrMagnitude(transform.position) < rangoAtaque*rangoAtaque) 
+                            ChangeTarget();
+                            Detectar();
+                            if (Vector3.SqrMagnitude(transform.position) < rangoAtaque * rangoAtaque)
                                 ChangeState(MonsterState.attacking);
                         }
                     }
                     break;
-				case MonsterState.attacking:
-                    if(controlNivel.nivelTerminado){
-                        ChangeState(MonsterState.idle);
-                        break;
+                case MonsterState.attacking:
+                    if (saludEnemigo == null){
+                        ChangeTarget();
+                        ChangeState(MonsterState.walking);
                     }
-                    if (saludEnemigo == null)
-                    {
-                        if(controlNivel.nivelTerminado)
-                            ChangeState(MonsterState.idle);
-                        else{
-                            ChangeTarget();
-                            ChangeState(MonsterState.walking);
-                        }
+                    if (saludEnemigo != null){
+                        saludEnemigo.ReduceHealth(poder / 2f);
                     }
-					if (saludEnemigo != null)
-					{
-                        saludEnemigo.ReduceHealth(poder/2f);
-					}
                     break;
-				case MonsterState.dying:
-					break;
-				default:
-					break;
-			}
+                case MonsterState.dying:
+                    break;
+                default:
+                    break;
+            }
             yield return new WaitForSeconds(0.5f);
-		}
-	}
+        }
+    }
 
-	public void Detectar()
-	{
+    public void Detectar()
+    {
         Collider[] cols = Physics.OverlapSphere(transform.position, rangoVision, capaEdificios);
-		if (cols.Length > 0)
-		{
+        if (cols.Length > 0)
+        {
             float dMenor = 5000;
             int targetMasCercano = 0;
             for (var i = 0; i < cols.Length; i++)
             {
                 float distancia = Vector3.SqrMagnitude(cols[i].transform.position - transform.position);
-                if(distancia < dMenor){
+                if (distancia < dMenor)
+                {
                     targetMasCercano = i;
                     dMenor = distancia;
                 }
             }
             ChangeTarget(cols[targetMasCercano].transform);
-		}
-	}
+        }
+    }
 
-	public void ChangeTarget(Transform nT = null)
-	{
+    public void ChangeTarget(Transform nT = null)
+    {
         actualTarget = nT;
-        movement.target = (nT != null)?  nT.position: Vector3.zero;
-		if (nT != null)
-		{
+        movement.target = (nT != null) ? nT.position : Vector3.zero;
+        if (nT != null)
+        {
             saludEnemigo = nT.GetComponent<Health>();
-		}
+        }
     }
 
 
     public void ChangeState(MonsterState nS)
     {
-		switch (nS)
-		{
-			case MonsterState.idle:
+        switch (nS)
+        {
+            case MonsterState.idle:
                 movement.StopCharacter();
-				break;
-			case MonsterState.walking:
+                break;
+            case MonsterState.walking:
                 movement.MoveCharacter();
-				break;
-			case MonsterState.attacking:
+                break;
+            case MonsterState.attacking:
                 movement.StopCharacter();
-				break;
-			case MonsterState.dying:
+                break;
+            case MonsterState.dying:
                 movement.StopCharacter();
-				break;
-			default:
-				break;
-		}
-		state = nS;
+                break;
+            default:
+                break;
+        }
+        state = nS;
         animator.SetInteger("estado", (int)nS);
-        
+
     }
 
-    public void Death(){
+    public void Death()
+    {
         ChangeState(MonsterState.dying);
         Invoke("Morir", 15f);
     }
 
-    private void Morir(){
+    private void Morir()
+    {
         Destroy(gameObject);
     }
 
 
 #if UNITY_EDITOR
-    private void OnDrawGizmosSelected() {
-         Handles.color = Color.red;
-         Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
-         Handles.DrawWireDisc(transform.position + Vector3.up*0.2f, Vector3.up, rangoVision); 
+    private void OnDrawGizmosSelected()
+    {
+        Handles.color = Color.red;
+        Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
+        Handles.DrawWireDisc(transform.position + Vector3.up * 0.2f, Vector3.up, rangoVision);
     }
 #endif
 

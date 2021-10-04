@@ -6,31 +6,35 @@ using UnityEngine.SceneManagement;
 public class Juego : MonoBehaviour
 {
     public static Juego singleton;
+    public bool enJuego;
 
-    public int nivelAlcanzado = 0;
-    public int nivelActual;
-    public string[] niveles;
+    public static Juego Instance { get {return singleton; } }
 
-
-    void Start()
-    {
+    private void Awake() {
         singleton = this;
     }
 
-
-    public void SubirDeNivel(){
-        nivelAlcanzado++;
+    void Start()
+    {
+        enJuego = true;
     }
 
 
-    public void SeleccionarNivel(int nivel){
-        if(nivel <= nivelAlcanzado){
-            nivelActual = nivel;
-            SceneManager.LoadScene(niveles[nivel]);
+    public void CompararNivel(int nivel){
+        if(PlayerPrefs.GetInt("nivel", 1) < nivel + 1){
+            PlayerPrefs.SetInt("nivel", nivel + 1);
         }
     }
 
-    public void RepetirNivel(){
-        SceneManager.LoadScene(niveles[nivelActual]);
+    public void ResetNiveles(){
+        PlayerPrefs.SetInt("nivel", 1);
     }
+
+    public void AbrirMenuNiveles(){
+        SceneManager.LoadScene("MenuNiveles");
+    }
+    
+
+
+    
 }
