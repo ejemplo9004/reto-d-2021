@@ -29,6 +29,10 @@ public class Juego : MonoBehaviour
     public void ResetNiveles(){
         PlayerPrefs.SetInt("nivel", 1);
     }
+
+    public void AbrirMenuNiveles(){
+        SceneManager.LoadScene("MenuNiveles");
+    }
     
 
 

@@ -20,25 +20,26 @@ public class Nivel : MonoBehaviour
     {
         while (true)
         {
-            if (torreEnemiga == null && Juego.singleton.enJuego){
+            if (torreEnemiga == null && Juego.singleton.enJuego)
+            {
                 Juego.singleton.enJuego = false;
                 Juego.singleton.CompararNivel(numNivel);
                 Debug.Log("Nivel superado. ¡Nivel " + PlayerPrefs.GetInt("nivel") + " superado!");
-                Time.timeScale = 0;
-                
+                Juego.singleton.AbrirMenuNiveles();
             }
-            else if(torreAliada == null && Juego.singleton.enJuego){
+            else if (torreAliada == null && Juego.singleton.enJuego)
+            {
                 Juego.singleton.enJuego = false;
-                Time.timeScale = 0;
+                Juego.singleton.AbrirMenuNiveles();
             }
-            
+
             yield return new WaitForSeconds(0.5f);
         }
     }
 
-    
 
-    
+
+
 
 
 }

@@ -16,7 +16,7 @@ public class Cronometro : MonoBehaviour
     }
     void Start()
     {
-        tiempoAcabado.AddListener(() => {Juego.singleton.RepetirNivel();});
+        tiempoAcabado.AddListener(() => {Juego.singleton.AbrirMenuNiveles();});
     }
     // Update is called once per frame
     void Update()

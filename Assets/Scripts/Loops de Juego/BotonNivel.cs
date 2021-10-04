@@ -17,13 +17,13 @@ public class BotonNivel : MonoBehaviour
         ActivarBoton();
     }
 
-    public void ActivarBoton(){ // Cargar como componente
+    public void ActivarBoton(){
         
         boton.interactable = (nivel <= PlayerPrefs.GetInt("nivel", 1)) ? true : false;
         Debug.Log(PlayerPrefs.GetInt("nivel", 1));
     }
 
-    public void AbrirNivel(string scene){ // Añadir en evento OnClick()
+    public void AbrirNivel(string scene){
         SceneManager.LoadScene(scene);
     }
 }
