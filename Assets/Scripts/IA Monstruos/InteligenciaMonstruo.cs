@@ -44,9 +44,11 @@ public class InteligenciaMonstruo : MonoBehaviour
                     }
                     else
                     {
-                        Detectar();
+                        
                         if (actualTarget == null)
                         {
+                            ChangeTarget();
+                            Detectar();
                             if (Vector3.SqrMagnitude(transform.position) < rangoAtaque * rangoAtaque)
                                 ChangeState(MonsterState.attacking);
                         }
@@ -56,7 +58,6 @@ public class InteligenciaMonstruo : MonoBehaviour
                     if (saludEnemigo == null){
                         ChangeTarget();
                         ChangeState(MonsterState.walking);
-
                     }
                     if (saludEnemigo != null){
                         saludEnemigo.ReduceHealth(poder / 2f);

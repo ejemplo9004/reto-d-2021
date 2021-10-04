@@ -8,7 +8,7 @@ public class Juego : MonoBehaviour
     public static Juego singleton;
     public bool enJuego;
 
-    // public static Juego Instance { get {return singleton; } }
+    public static Juego Instance { get {return singleton; } }
 
     private void Awake() {
         singleton = this;

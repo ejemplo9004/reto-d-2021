@@ -26,4 +26,9 @@ public class BotonNivel : MonoBehaviour
     public void AbrirNivel(string scene){
         SceneManager.LoadScene(scene);
     }
+
+    public void ResetNiveles(){
+        PlayerPrefs.SetInt("nivel", 1);
+        SceneManager.LoadScene("MenuNiveles");
+    }
 }
