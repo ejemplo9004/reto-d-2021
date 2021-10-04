@@ -2815,7 +2815,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   saludEnemigo: {fileID: 0}
-  controlNivel: {fileID: 0}
   poder: 25
   rangoVision: 3.33
   rangoAtaque: 1.5
@@ -2947,7 +2946,7 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"collection":{"$content":[{"name":"Valor","value":{"$content":2,"$type":"System.Int32"},"$version":"A"},{"name":"ObjetoACrear","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
-    - {fileID: 919132149155446097, guid: 1d3b685b1ca081442a03df59a251fe64, type: 3}
+    - {fileID: 3286074468118753631, guid: 24455b1ccc8b2dc419da3bb399662908, type: 3}
 --- !u!114 &1309214129
 MonoBehaviour:
   m_ObjectHideFlags: 0
