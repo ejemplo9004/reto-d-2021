@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 279571066}
   - component: {fileID: 279571065}
   - component: {fileID: 279571064}
+  - component: {fileID: 279571067}
   m_Layer: 5
   m_Name: nivel5
   m_TagString: Untagged
@@ -305,6 +306,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 279571062}
   m_CullTransparentMesh: 1
+--- !u!114 &279571067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279571062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1c892a10438b146baa2d7e13adea51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boton: {fileID: 279571064}
+  nivel: 5
 --- !u!1001 &328659868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -439,6 +454,7 @@ GameObject:
   - component: {fileID: 386764696}
   - component: {fileID: 386764695}
   - component: {fileID: 386764694}
+  - component: {fileID: 386764697}
   m_Layer: 5
   m_Name: nivel2
   m_TagString: Untagged
@@ -548,6 +564,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386764692}
   m_CullTransparentMesh: 1
+--- !u!114 &386764697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386764692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1c892a10438b146baa2d7e13adea51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boton: {fileID: 386764694}
+  nivel: 2
 --- !u!1 &500978226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dc7a4d07a9fa8f9469795f930105db9a, type: 3}
@@ -772,6 +802,7 @@ GameObject:
   - component: {fileID: 734913971}
   - component: {fileID: 734913970}
   - component: {fileID: 734913969}
+  - component: {fileID: 734913972}
   m_Layer: 5
   m_Name: nivel1
   m_TagString: Untagged
@@ -842,7 +873,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 734913970}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 734913972}
+        m_TargetAssemblyTypeName: BotonNivel, Assembly-CSharp
+        m_MethodName: AbrirNivel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: JoJa
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &734913970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,6 +924,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734913967}
   m_CullTransparentMesh: 1
+--- !u!114 &734913972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734913967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1c892a10438b146baa2d7e13adea51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boton: {fileID: 734913969}
+  nivel: 1
 --- !u!1 &914235616
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +950,7 @@ GameObject:
   - component: {fileID: 914235620}
   - component: {fileID: 914235619}
   - component: {fileID: 914235618}
+  - component: {fileID: 914235621}
   m_Layer: 5
   m_Name: nivel4
   m_TagString: Untagged
@@ -1002,6 +1060,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914235616}
   m_CullTransparentMesh: 1
+--- !u!114 &914235621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914235616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1c892a10438b146baa2d7e13adea51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boton: {fileID: 914235618}
+  nivel: 4
 --- !u!1 &958413711
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,6 +1165,7 @@ GameObject:
   - component: {fileID: 975441826}
   - component: {fileID: 975441825}
   - component: {fileID: 975441824}
+  - component: {fileID: 975441827}
   m_Layer: 5
   m_Name: nivel3
   m_TagString: Untagged
@@ -1202,6 +1275,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 975441822}
   m_CullTransparentMesh: 1
+--- !u!114 &975441827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975441822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1c892a10438b146baa2d7e13adea51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boton: {fileID: 975441824}
+  nivel: 3
 --- !u!1 &991102033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1588,11 +1675,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 919fa66c8996cec4b90303d83a7a4c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivelTerminado: 0
   numNivel: 2
   torreEnemiga: {fileID: 1353640175}
   torreAliada: {fileID: 500978231}
-  botonNivel: {fileID: 1116514007}
 --- !u!1 &1209745836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,6 +2214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875720432}
   - component: {fileID: 1875720431}
+  - component: {fileID: 1875720430}
   m_Layer: 0
   m_Name: Juego
   m_TagString: Untagged
@@ -2136,6 +2222,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1875720430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875720429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919fa66c8996cec4b90303d83a7a4c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numNivel: 1
+  torreEnemiga: {fileID: 1353640175}
+  torreAliada: {fileID: 2125830867}
 --- !u!114 &1875720431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2148,6 +2249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51cae5601a789ab479317b2a388476d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enJuego: 0
 --- !u!4 &1875720432
 Transform:
   m_ObjectHideFlags: 0
@@ -2290,6 +2392,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!4 &2125830867 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc7a4d07a9fa8f9469795f930105db9a, type: 3}
+  m_PrefabInstance: {fileID: 1370494361}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3286074469305168226
 PrefabInstance:
   m_ObjectHideFlags: 0

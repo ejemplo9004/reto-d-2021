@@ -6,20 +6,29 @@ using UnityEngine.SceneManagement;
 public class Juego : MonoBehaviour
 {
     public static Juego singleton;
+    public bool enJuego;
+
+    // public static Juego Instance { get {return singleton; } }
+
+    private void Awake() {
+        singleton = this;
+    }
 
     void Start()
     {
-        singleton = this;
-        PlayerPrefs.SetInt("nivel", 1);
+        enJuego = true;
     }
 
 
     public void CompararNivel(int nivel){
-        if(PlayerPrefs.GetInt("nivel", 1) < nivel){
-            PlayerPrefs.SetInt("nivel", nivel);
+        if(PlayerPrefs.GetInt("nivel", 1) < nivel + 1){
+            PlayerPrefs.SetInt("nivel", nivel + 1);
         }
     }
 
+    public void ResetNiveles(){
+        PlayerPrefs.SetInt("nivel", 1);
+    }
     
 
 
