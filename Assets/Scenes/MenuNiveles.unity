@@ -623,6 +623,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Sulito 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -631,6 +639,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!1 &496839237
@@ -840,6 +852,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Morion 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -848,6 +868,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!1001 &513711909
@@ -945,6 +969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: JoJa 1
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: nivel
       value: 2
@@ -957,6 +985,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!1001 &533875483
@@ -1054,6 +1086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Gabriel 1
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: nivel
       value: 3
@@ -1066,6 +1102,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!224 &625967361 stripped
@@ -1268,6 +1308,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Morion 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1276,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!1 &799502742
@@ -1439,6 +1491,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: JoJa 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1447,6 +1507,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!1001 &1164896412
@@ -1544,6 +1608,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Gabriel 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1552,6 +1624,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!1 &1172466169
@@ -1807,6 +1883,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: JoJa 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1815,6 +1899,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!224 &1485470673 stripped
@@ -2148,6 +2236,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Gabriel 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -2156,6 +2252,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!224 &1798148139 stripped
@@ -2258,6 +2358,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Sulito 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -2266,6 +2374,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!1 &1833191122
@@ -2549,6 +2661,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Morion 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -2557,6 +2677,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 1a5d8785d80a4ee42a2a4c8632436dc0, type: 3}
+    - target: {fileID: 995891433481878200, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_Text
+      value: Nivel 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
 --- !u!224 &2117862906 stripped
@@ -2745,7 +2869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Morion 1
+      value: Sulito 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}

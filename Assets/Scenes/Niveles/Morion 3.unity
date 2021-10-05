@@ -2550,6 +2550,10 @@ PrefabInstance:
       value: Controlador
       objectReference: {fileID: 0}
     - target: {fileID: 4068418751991931539, guid: ed2ee834836af224fa45b154dfdb3988, type: 3}
+      propertyPath: numNivel
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4068418751991931539, guid: ed2ee834836af224fa45b154dfdb3988, type: 3}
       propertyPath: torreEnemiga
       value: 
       objectReference: {fileID: 1334025171}
