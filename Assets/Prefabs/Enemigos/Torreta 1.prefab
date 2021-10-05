@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3536251413015006642}
   - component: {fileID: 3536251413015006643}
   m_Layer: 6
-  m_Name: Torreta
+  m_Name: Torreta 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a803e21070de16d4882bef0f01734c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dps: 1.5
+  dps: 0.75
   attackRadio: 2
   enemyTag: Player
   attackMode:

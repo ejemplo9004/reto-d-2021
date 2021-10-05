@@ -357,7 +357,7 @@ GameObject:
   - component: {fileID: 4319857814712409859}
   m_Layer: 0
   m_Name: Chica
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -441,8 +441,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4685c38f5739c4f4da27c7b49ca5ace4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHealth: 100
+  health: 200
+  maxHealth: 400
   uiHealthPercentage: {fileID: 0}
   autoDestruir: 0
   death:

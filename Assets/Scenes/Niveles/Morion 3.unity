@@ -2628,7 +2628,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1688362764803282358, guid: 70e1f67110388c140a7f566472747b59, type: 3}
       propertyPath: tiempoTotal
-      value: 100
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1688362764803282360, guid: 70e1f67110388c140a7f566472747b59, type: 3}
       propertyPath: m_Pivot.x

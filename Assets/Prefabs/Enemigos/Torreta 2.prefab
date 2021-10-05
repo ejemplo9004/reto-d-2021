@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a803e21070de16d4882bef0f01734c5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dps: 1.5
+  dps: 0.75
   attackRadio: 2
   enemyTag: Player
   attackMode:
