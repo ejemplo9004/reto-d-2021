@@ -245,20 +245,23 @@ MonoBehaviour:
     descripcion: Es una carta lenta pero con buen ataque
     foto: {fileID: -6793546094431307122, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
   - nombre: "Ana Ram\xEDrez"
-    descripcion: Es una carta lenta pero con buen ataque
+    descripcion: "Velocidad media, da\xF1o medio."
     foto: {fileID: 2555071131087466780, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
   - nombre: X. R.
-    descripcion: Es una carta lenta pero con buen ataque
+    descripcion: Ataca con epidemias en los edificios
     foto: {fileID: 3330374347584649851, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
   - nombre: "Vladimir R\xFAa"
-    descripcion: Es una carta lenta pero con buen ataque
+    descripcion: Bueno para atacar, lento para llegar
     foto: {fileID: 7912255684870006209, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
   - nombre: "Mario Ra\xFAl"
-    descripcion: Es una carta lenta pero con buen ataque
+    descripcion: "Carta r\xE1pida con poco da\xF1o, pero buena velocidad"
     foto: {fileID: -2958478465175809223, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
   - nombre: Vaca Ramona
-    descripcion: Es una carta lenta pero con buen ataque
+    descripcion: Ataca la vaca Ramona, cuerpo a cuerpo
     foto: {fileID: 3192313705508189753, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
+  - nombre: Monja
+    descripcion: "Sirve para generar energ\xEDa m\xE1s r\xE1pido"
+    foto: {fileID: -858849753801008285, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
   botonesCartas: []
   imFoto: {fileID: 83616374}
   txtNombre: {fileID: 1640026495}
@@ -2742,7 +2745,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Morion2
+      value: Morion 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}

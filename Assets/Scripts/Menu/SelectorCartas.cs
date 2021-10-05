@@ -60,6 +60,40 @@ public class SelectorCartas : MonoBehaviour
 		{
 			Activar(cual);
 		}
+
+		if (seleccionadas.Count > 0)
+		{
+			PlayerPrefs.SetInt("c0", seleccionadas[0]);
+		}
+		else
+		{
+			PlayerPrefs.SetInt("c0", -1);
+		}
+		if (seleccionadas.Count > 1)
+		{
+			PlayerPrefs.SetInt("c1", seleccionadas[1]);
+		}
+		else
+		{
+			PlayerPrefs.SetInt("c1", -1);
+		}
+
+		if (seleccionadas.Count > 2)
+		{
+			PlayerPrefs.SetInt("c2", seleccionadas[2]);
+		}
+		else
+		{
+			PlayerPrefs.SetInt("c2", -1);
+		}
+		if (seleccionadas.Count > 3)
+		{
+			PlayerPrefs.SetInt("c3", seleccionadas[3]);
+		}
+		else
+		{
+			PlayerPrefs.SetInt("c3", -1);
+		}
 	}
 
 	public void Desactivar(int cual)
