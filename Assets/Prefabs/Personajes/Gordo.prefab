@@ -921,9 +921,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   saludEnemigo: {fileID: 0}
-  poder: 25
-  rangoVision: 3.33
-  rangoAtaque: 1.5
+  poder: 30
+  rangoVision: 4
+  rangoAtaque: 2
 --- !u!136 &5655853677206617742
 CapsuleCollider:
   m_ObjectHideFlags: 0

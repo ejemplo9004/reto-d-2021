@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a5be5878086bd4da2548533fc97db7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.3
+  speed: 1
   currentSpeed: 0
   target: {x: 0, y: 0, z: 0}
 --- !u!114 &3200067604794103269
@@ -563,8 +563,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   saludEnemigo: {fileID: 0}
-  poder: 25
-  rangoVision: 3.33
+  poder: 10
+  rangoVision: 5
   rangoAtaque: 1.5
 --- !u!136 &3200067604794103268
 CapsuleCollider:

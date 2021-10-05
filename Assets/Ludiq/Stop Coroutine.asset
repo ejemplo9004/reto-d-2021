@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: Stop Coroutine
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"enter","label":null,"summary":null,"hideLabel":false}],"controlOutputDefinitions":[{"key":"exit","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"UnityEngine.GameObject","key":"target","label":null,"summary":null,"hideLabel":false},{"hasDefaultValue":true,"defaultValue":null,"_type":"System.String","key":"name","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"isListening":false,"pan":{"x":156.0,"y":85.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":420.0,"y":-58.0},"guid":"672954ae-7a6b-4c81-929a-8b570543e8e1","$version":"A","$type":"Bolt.GraphOutput","$id":"13"},{"defaultValues":{},"position":{"x":-457.0,"y":-60.0},"guid":"1ed5c33b-c86d-4583-a2fc-a1ddc109ca7a","$version":"A","$type":"Bolt.GraphInput","$id":"15"},{"type":"System.String","value":{"$content":".Coroutine.Instance.Stop","$type":"System.String"},"defaultValues":{},"position":{"x":-363.0,"y":200.0},"guid":"e2914e00-74b3-4981-be1f-5e05dbcd5b3d","$version":"A","$type":"Bolt.Literal","$id":"17"},{"defaultValues":{},"position":{"x":-129.0,"y":102.0},"guid":"8b6f431e-54d6-439f-a85e-d3e46f39fe54","$version":"A","$type":"Bolt.GenericAdd","$id":"19"},{"argumentCount":0,"defaultValues":{"name":{"$content":"","$type":"System.String"},"target":null},"position":{"x":91.0,"y":-75.0},"guid":"2d331757-5eb6-461e-ba69-6d182b9e8133","$version":"A","$type":"Bolt.TriggerCustomEvent","$id":"21"},{"sourceUnit":{"$ref":"15"},"sourceKey":"enter","destinationUnit":{"$ref":"21"},"destinationKey":"enter","guid":"45261045-1b25-4beb-8687-87ac3ca680c5","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"exit","destinationUnit":{"$ref":"13"},"destinationKey":"exit","guid":"fbb828b4-844b-439a-9b04-48df1e85d1d2","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"sum","destinationUnit":{"$ref":"21"},"destinationKey":"name","guid":"4cae9090-beab-4677-8179-0114b28ab993","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"output","destinationUnit":{"$ref":"19"},"destinationKey":"b","guid":"7f81064a-c5e9-490e-8233-f3d4cc439024","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"target","destinationUnit":{"$ref":"21"},"destinationKey":"target","guid":"1c48debb-f246-4b43-8abb-01f1bd91c6cf","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"name","destinationUnit":{"$ref":"19"},"destinationKey":"a","guid":"ff0a2143-e2a3-4aa4-a5dc-090a2581ad21","$type":"Bolt.ValueConnection"}],"title":"Stop
+      Coroutine","summary":null,"$version":"A"}}'
+    _objectReferences: []
