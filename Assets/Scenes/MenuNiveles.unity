@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
-  m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_AmbientIntensity: 0
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -241,22 +241,22 @@ MonoBehaviour:
   botonPrefab: {fileID: 8267201834153761368, guid: 1eca9c22f15b6a7478867714bce68c47, type: 3}
   padre: {fileID: 694587264}
   infos:
-  - nombre: Rodrigo Ibarra
+  - nombre: Armando Ibarra
     descripcion: Es una carta lenta pero con buen ataque
     foto: {fileID: -6793546094431307122, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
-  - nombre: Rodrigo Ibarra
+  - nombre: "Ana Ram\xEDrez"
     descripcion: Es una carta lenta pero con buen ataque
     foto: {fileID: 2555071131087466780, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
-  - nombre: Rodrigo Ibarra
+  - nombre: X. R.
     descripcion: Es una carta lenta pero con buen ataque
     foto: {fileID: 3330374347584649851, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
-  - nombre: Rodrigo Ibarra
+  - nombre: "Vladimir R\xFAa"
     descripcion: Es una carta lenta pero con buen ataque
     foto: {fileID: 7912255684870006209, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
-  - nombre: Rodrigo Ibarra
+  - nombre: "Mario Ra\xFAl"
     descripcion: Es una carta lenta pero con buen ataque
     foto: {fileID: -2958478465175809223, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
-  - nombre: Rodrigo Ibarra
+  - nombre: Vaca Ramona
     descripcion: Es una carta lenta pero con buen ataque
     foto: {fileID: 3192313705508189753, guid: 0ae5b462b1b1cdb4eb5d9399b4034868, type: 3}
   botonesCartas: []
@@ -2426,13 +2426,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1861438257}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: -0.26956633, y: -0, z: -0, w: -0.9629818}
+  m_LocalPosition: {x: 0, y: 0.63, z: -1.056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: -328.723, y: 0, z: 0}
 --- !u!224 &1994387168 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 995891431594324056, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
