@@ -7,8 +7,7 @@ public class Monja : MonoBehaviour
     public Animator animator;
     public Movimiento movement;
     public MonsterState state;
-    public LayerMask capaEdificios;
-    public Health saludEnemigo;
+    public float distancia;
     [Header("Stats")]
     public float poder;
     public float rangoVision;
@@ -18,23 +17,73 @@ public class Monja : MonoBehaviour
     void Start()
     {
         movement = this.gameObject.GetComponent<Movimiento>();
-        // ChangeTarget();
-        // ChangeState(MonsterState.walking);
+        CalcularTarget();
+        ChangeState(MonsterState.walking);
+        StartCoroutine(Estados());
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator Estados()
     {
-        
+        while (true)
+        {
+            switch (state)
+            {
+                case MonsterState.idle:
+                    break;
+                case MonsterState.walking:
+                    if (movement.target != null && Vector3.SqrMagnitude(transform.position - movement.target) < rangoAtaque * rangoAtaque)
+                    {
+                        ChangeState(MonsterState.attacking);
+                    }
+                    break;
+                case MonsterState.attacking:
+                    break;
+                case MonsterState.dying:
+                    break;
+                default:
+                    break;
+            }
+            yield return new WaitForSeconds(0.5f);
+        }
     }
 
-    public void ChangeTarget(Transform nT)
+    public void ChangeState(MonsterState nS)
     {
-        // actualTarget = nT;
-        movement.target = (nT != null) ? nT.position : Vector3.zero;
+        switch (nS)
+        {
+            case MonsterState.idle:
+                movement.StopCharacter();
+                break;
+            case MonsterState.walking:
+                movement.MoveCharacter();
+                break;
+            case MonsterState.attacking:
+                movement.StopCharacter();
+                break;
+            case MonsterState.dying:
+                movement.StopCharacter();
+                break;
+            default:
+                break;
+        }
+        state = nS;
+        animator.SetInteger("estado", (int)nS);
+
     }
 
-    public void CalcularTarget(float d){
-        
+    public void Death()
+    {
+        ChangeState(MonsterState.dying);
+        Invoke("Morir", 20f);
+    }
+
+    private void Morir()
+    {
+        Destroy(gameObject);
+    }
+
+    public void CalcularTarget(){
+        Vector3 target = transform.position + new Vector3(Random.Range(-distancia,distancia), 0f, Random.Range(-distancia,distancia));
+        movement.target = target;
     }
 }

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/JoJa.unity
     guid: 10a63fc7acf2e9e48852ddd31f21cc40
+  - enabled: 1
+    path: Assets/Scenes/Morion2.unity
+    guid: 30f9800477834664f9100cf111b5877a
   m_configObjects: {}

@@ -131,7 +131,7 @@ public class InteligenciaMonstruo : MonoBehaviour
     public void Death()
     {
         ChangeState(MonsterState.dying);
-        Invoke("Morir", 15f);
+        Invoke("Morir", 20f);
     }
 
     private void Morir()
