@@ -942,6 +942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: nivel1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1046,6 +1050,10 @@ PrefabInstance:
     - target: {fileID: 995891431594324057, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Name
       value: nivel1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324059, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: nivel
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 995891431594324061, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Type
@@ -2731,6 +2739,10 @@ PrefabInstance:
     - target: {fileID: 995891431594324057, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
       propertyPath: m_Name
       value: nivel1
+      objectReference: {fileID: 0}
+    - target: {fileID: 995891431594324058, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Morion2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d6b09a19a4a3ca478eacad78800d290, type: 3}

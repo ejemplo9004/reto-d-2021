@@ -7,7 +7,6 @@ public class Nivel : MonoBehaviour
 {
     public int numNivel;
     public Transform torreEnemiga;
-    public Transform torreAliada;
 
     // Start is called before the first frame update
     void Start()
@@ -25,11 +24,6 @@ public class Nivel : MonoBehaviour
                 Juego.singleton.enJuego = false;
                 Juego.singleton.CompararNivel(numNivel);
                 Debug.Log("Nivel superado. ¡Nivel " + PlayerPrefs.GetInt("nivel") + " superado!");
-                Juego.singleton.AbrirMenuNiveles();
-            }
-            else if (torreAliada == null && Juego.singleton.enJuego)
-            {
-                Juego.singleton.enJuego = false;
                 Juego.singleton.AbrirMenuNiveles();
             }
 
