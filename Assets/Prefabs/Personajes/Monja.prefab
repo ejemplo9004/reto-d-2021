@@ -927,6 +927,8 @@ GameObject:
   - component: {fileID: 7070042247720055177}
   - component: {fileID: 7070042247720055285}
   - component: {fileID: 2035558641971132294}
+  - component: {fileID: 4070055103646841101}
+  - component: {fileID: 4470454623812503964}
   m_Layer: 0
   m_Name: Monja
   m_TagString: Untagged
@@ -1040,6 +1042,37 @@ MonoBehaviour:
   poder: 0
   rangoVision: 0
   rangoAtaque: 1.5
+--- !u!114 &4070055103646841101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070042247720055178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"collection":{"$content":[{"name":"periodo","value":{"$content":6,"$type":"System.Int32"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
+--- !u!114 &4470454623812503964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070042247720055178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -57143145, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 4a14a7f0d74ab234694f8c97947a82ca, type: 2}
 --- !u!1 &7485643418453701763
 GameObject:
   m_ObjectHideFlags: 0
